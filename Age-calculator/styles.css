@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 2rem;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    font-size: 2rem;
+  }
+  
+  label {
+    display: block;
+    margin: 15px 0 5px;
+  }
+  
+  input[type="date"] {
+    width: 100%;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .btn {
+    flex: 1;
+    padding: 12px;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+  
+  .green { background-color: #28a745; }
+  .red { background-color: #dc3545; }
+  .blue { background-color: #007bff; }
+  
+  #darkModeToggle {
+    margin-top: 20px;
+    width: 100%;
+    padding: 10px;
+    background-color: #ccc;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+  }
+  
+  .resultBox {
+    margin-top: 20px;
+    background-color: #e9f5ff;
+    padding: 15px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  /* Dark Mode */
+  body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+  }
+  
+  body.dark-mode .container {
+    background-color: #1e1e1e;
+  }
+  
+  body.dark-mode input,
+  body.dark-mode .btn,
+  body.dark-mode #darkModeToggle {
+    background-color: #333;
+    color: white;
+    border: 1px solid #555;
+  }
+  
+  body.dark-mode .resultBox {
+    background-color: #2a2a2a;
+    color: #ccc;
+  }
+  
